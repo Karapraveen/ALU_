@@ -1,0 +1,5 @@
+catch { setAnalysisMode -analysisType bcwc }
+setExtractRCMode  -engine preRoute
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setSrouteMode -viaConnectToShape noshape }
+catch { setDelayCalMode -engine aae }
